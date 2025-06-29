@@ -60,12 +60,12 @@
 #define PWM_TIMER_CLK                   RCC_APB1Periph_TIM3
 #define PWM_PERIOD                      16799
 
-#define SYSTEM_CORE_CLOCK_MHZ               168
+#define SYSTEM_CORE_CLOCK_MHZ		168
 
 typedef struct {
-    CPU_BOOLEAN fan_on;      // 선풍기 전원 상태 (DEF_TRUE: On, DEF_FALSE: Off)
-    uint8_t     speed_level; // 풍속 (0: 정지, 1: 1단, 2: 2단, 3: 3단)
-} Fan_Control_TypeDef; // 선풍기 제어 상태
+    CPU_BOOLEAN fan_on;      	// 선풍기 전원 상태 (DEF_TRUE: On, DEF_FALSE: Off)
+    uint8_t     speed_level;	// 풍속 (0: 정지, 1: 1단, 2: 2단, 3: 3단)
+} Fan_Control_TypeDef; 		// 선풍기 제어 상태
 
 
 
@@ -441,10 +441,10 @@ static void Setup_GPIO(void)
     GPIO_Init(MOTOR_ENA_PORT, &GPIO_InitStructure);
     GPIO_PinAFConfig(MOTOR_ENA_PORT, MOTOR_ENA_PIN_SOURCE, MOTOR_ENA_AF_TIM);
 
-		GPIO_InitStructure.GPIO_Pin = BTN1_PIN | BTN2_PIN | BTN3_PIN;
-		GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN;
-		GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
-		GPIO_Init(BTN_PORT, &GPIO_InitStructure);
+    GPIO_InitStructure.GPIO_Pin = BTN1_PIN | BTN2_PIN | BTN3_PIN;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN;
+    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+    GPIO_Init(BTN_PORT, &GPIO_InitStructure);
 
     GPIO_InitStructure.GPIO_Pin = LED_R_PIN;
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
