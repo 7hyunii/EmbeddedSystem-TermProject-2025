@@ -41,4 +41,7 @@ RTOS 기반 태스크 구조를 통해 사용자 최소 조작으로 선풍기 O
 ## 📄 Documentation
 
 For a detailed explanation of the system architecture, task design, and implementation,  
-please refer to the 📄 [Report.pdf](./Report.pdf) included in this repository.
+please refer to the following documents included in this repository:
+
+- 📄 [Report.pdf](./Report.pdf)
+- 📄 [app.c](./app.c)
