@@ -1,4 +1,4 @@
-# 🌀 Smart Fan
+# 🌀 Smart Fan (Prototype)
 
 > 부산대학교 정보컴퓨터공학부 컴퓨터공학전공 
 > 임베디드시스템 Term Project (2025년 1학기)
