@@ -441,10 +441,10 @@ static void Setup_GPIO(void)
     GPIO_Init(MOTOR_ENA_PORT, &GPIO_InitStructure);
     GPIO_PinAFConfig(MOTOR_ENA_PORT, MOTOR_ENA_PIN_SOURCE, MOTOR_ENA_AF_TIM);
 
-	 GPIO_InitStructure.GPIO_Pin = BTN1_PIN | BTN2_PIN | BTN3_PIN;
-	 GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN;
-	 GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
-	 GPIO_Init(BTN_PORT, &GPIO_InitStructure);
+	GPIO_InitStructure.GPIO_Pin = BTN1_PIN | BTN2_PIN | BTN3_PIN;
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN;
+	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+	GPIO_Init(BTN_PORT, &GPIO_InitStructure);
 
     GPIO_InitStructure.GPIO_Pin = LED_R_PIN;
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
