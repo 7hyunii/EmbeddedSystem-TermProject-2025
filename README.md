@@ -44,4 +44,4 @@ please refer to the following documents included in this repository:
 
 This project is based on the **NUCLEO-F429ZI example code** and was implemented by modifying only the `app.c` file.
 - 📄 [Report.pdf](./Report.pdf)
-- 📄 [app.c](./app.c)
+- 📄 [app.c](./NUCLEO-f429zi_example_code%20(updated)/Examples/ST/STM32F429II-SK/OS3/app.c)
